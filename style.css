@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Kalam:wght@300;400;700&family=Sarpanch:wght@400;500;600;700;800;900&family=Tillana:wght@400;500;600;700;800&display=swap');
+
+/* 
+    Primeiro eu retirei algumas configurações padrão e defini o plano de fundo do meu body
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #293241;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    outline: none;
+}
+
+/* 
+    No menu de navegação, defini a estilização da listagem pra que ela fosse no sentido horizontal e os estilos das fontes.
+*/
+
+.menu nav {
+    display: flex;
+    height: 80px;
+    padding: 16px 80px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu li {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.menu li a{
+    color: #E0FBFC;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.menu li .sobre{
+    color: #F5F6F6;
+}
+
+.menu h1 {
+    color: #E0FBFC;
+    font-family: "Tillana", system-ui;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+.menu span {
+    font-weight: bold;
+}
+
+
+
+/*
+    No container, defini o espaçamento a distância entre cada seção da página e a direção que os elementos dentro dessa div serão exibidos.
+*/
+
+.container {
+    padding: 0px 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 
+    Na div "sobre", estilizei as duas seções que eu criei, a div "apresentação" em que falo sobre minha experiencia profissional e a div "descrição" em que falo um pouco sobre mim e meus hoobies.
+*/
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 136px;
+    flex: 1 0 0;
+    height: 100%;    
+}
+
+.apresentacao {
+    display: flex;
+    padding: 96px 112px;
+    align-items: center;
+    gap: 136px;
+}
+
+.apresentacao .texto-apresentacao {
+    display: flex;
+    width: 50%px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.apresentacao .texto-apresentacao h1{
+    font-family: "Tillana", system-ui;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    background: linear-gradient(90deg, #E0FBFC 0%, #EE6C4D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.apresentacao .texto-apresentacao h2 {
+    color: #F5F6F6;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.apresentacao .texto-apresentacao p {
+    color: #CDD0D4;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    align-self: stretch;
+}
+
+.texto-apresentacao .imagem-apresentacao {
+    flex-grow: 1;
+}
+
+.texto-apresentacao {
+    width: 50%;
+}
+
+.imagem-apresentacao {    
+    width: 50%;
+}
+
+.imagem-apresentacao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descricao {
+    display: flex;
+    padding: 40px;
+    align-items: flex-start;
+    gap: 136px;
+    align-self: stretch;
+}
+
+.descricao-conteudo {
+    display: flex;
+    padding: 72px;
+    align-items: flex-start;
+    gap: 136px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #3D5A80;
+}
+
+.imagem-descricao {
+    width: 50%;
+}
+
+.imagem-descricao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-descricao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.texto-descricao .logos {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.texto-descricao .sobre-mim {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.sobre-mim h4 {
+    color: #EE6C4D;
+    font-family: "Tillana", system-ui;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.sobre-mim h2 {
+    color: #E0FBFC;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.sobre-mim p {
+    color: #F5F6F6;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.texto-descricao .botao-curriculo {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #EE6C4D;
+}
+
+.botao-curriculo a{
+    color: #F5F6F6;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/*
+    Aqui, defini a div "projetos" que contém o Título, card do projeto e botão para ver mais.
+*/
+
+.projetos {
+    display: flex;
+    padding: 72px 112px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.titulo-projetos {
+    display: flex;
+    width: 592px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-projetos h4 {
+    color: #EE6C4D;
+    font-family: "Tillana", system-ui;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.titulo-projetos h2 {
+    color: #F5F6F6;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    align-self: stretch;
+}
+
+.box-projetos {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.conteudo-card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #3D5A80;
+}
+
+.conteudo-card img{
+    height: 160px;
+    align-self: stretch;
+    border-radius: 8px 8px 0px 0px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.conteudo-card h4 {
+    color:#CDD0D4;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.conteudo-card h3 {
+    color: #F5F6F6;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.conteudo-card p {
+    overflow: hidden;
+    color: #F5F6F6;
+    text-overflow: ellipsis;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.link-card {
+    width: 33%;
+    display: block;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.ver-mais-projetos {
+    display: inline-flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #EE6C4D;
+    box-shadow: none;
+    border: none;
+}
+
+.ver-mais-projetos p {
+    color: #F5F6F6;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    flex: 1 0 0;
+}
+
+/* 
+    Defini a div "formulário" estilizando o minha foto, o texto, os botões para as redes sociais e o formulário. 
+*/
+.contato {
+    display: flex;
+    padding: 40px;
+    align-items: flex-start;
+    gap: 136px;
+    align-self: stretch;
+}
+
+.info-formulario {
+    display: flex;
+    padding: 72px;
+    align-items: flex-start;
+    gap: 136px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #3D5A80;
+    
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.info-contato h4 {
+    color: #EE6C4D;
+    font-family: "Tillana", system-ui;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.info-contato h2 {
+    color: #F5F6F6;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.info-contato p span {
+    color: #EE6C4D;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.info-contato p {
+    color: #CDD0D4;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.info-contato section{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.botao-link {
+    display: flex;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 8px;
+    background: #293241;
+}
+
+.formulario {
+    width: 50%;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.formulario input {
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #293241;
+    color: #ffffff;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+}
+
+.formulario input:focus {
+    border-radius: 8px;
+    border: 1.5px solid; 
+}
+
+.formulario #mensagem{
+    display: flex;
+    width: 100%;
+    height: 160px;
+    padding: 12px 16px;
+    gap: 8px;
+    color: #CDD0D4;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    background: #293241;
+    border: none;
+    resize: none;
+}
+
+.formulario button {
+    margin-top: 32px;
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #EE6C4D;
+    border: none;
+}
+
+.formulario button p{
+    flex: 1 0 0;
+    color: #F5F6F6;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* 
+    Por fim, estilizei o footer da página, alinhando a listagem novamento no sentido horizontal, semelhante ao que fiz na barra de navegação
+*/
+
+.links {
+    display: flex;
+    padding: 32px 112px;
+    align-items: center;
+    gap: 24px;
+}
+
+.autor {
+    color: #CDD0D4;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    flex: 1 0 0;
+}
+
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+footer li a {
+    color: #CDD0D4;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Portifólio Lucas</title>
+</head>
+<body>
+    <!--
+        Coloquei todo o conteúdo em uma página só. Criei o menu e linkei as seções em uma listagem.
+    -->
+    <div id="menu" class="menu">
+        <nav>
+            <h1>Lucas<span>Becker</span></h1>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--
+        Dentro da Div container. Coloquei todo as divs "sobre", "projetos" e "contato".
+    -->
+    <div class="container"></div>
+    <!--
+        Na div "sobre", estão as informações sobre minhas experências profissionais e meus hobbies. E logo abaixo, um link para fazer o download do meu currículo (ainda não está funcionando).
+    -->
+        <div id="sobre" class="sobre">
+            <div class="apresentacao">
+                <div class="texto-apresentacao">
+                    <h1>Prazer, Lucas</h1>
+                    <h2>Estudando para ser desenvolvedor</h2>
+                    <p>Sou um profissional apaixonado por Desenvolvimento de Software. Durante meus 4 anos e meio na Sofit - Gestão de Frotas, tive a oportunidade de desempenhar uma variedade de funções desafiadoras. Iniciei minha jornada como Analista em BPO, onde gerenciei de forma terceirizada os custos de frotas de nossos clientes, importando dados para o sistema e criando relatórios detalhados. Minha habilidade em análise de dados me permitiu desenvolver dashboards personalizados, fornecendo informações críticas para auxiliar nossos clientes a tomarem melhores decisões.</p>
+                    <p>No meu último ano na empresa, iniciei uma transição para o setor de Desenvolvimento de Software, onde assumi a responsabilidade pelo setor de integração. Nessa função, mantive e desenvolvi novas integrações entre diversos sistemas utilizados pela empresa, utilizando ferramentas No-code como Make e Jitterbit. Além disso, realizei automações de processos, utilizando Node.js para manipular planilhas em Excel e executando APIs para importação de dados no sistema. Minha jornada na Sofit me proporcionou uma base sólida de habilidades técnicas e uma mentalidade orientada para soluções, pronta para enfrentar novos desafios no mundo do desenvolvimento de software.</p>
+                </div>
+                <div class="imagem-apresentacao">
+                    <img src="/src/pessoa-digitando.png" alt="computer">
+                </div>
+            </div>
+
+            <div class="descricao">
+                <div class="descricao-conteudo">
+                    <div class="imagem-descricao">
+                        <img src="src/homem-trabalhando.png" alt="homem trabalhando"/>
+                    </div>
+                    <div class="texto-descricao">
+                        <section class="logos">
+                            <img src="src/javascript.png" alt="logo javascript">
+                            <img src="src/python.png" alt="logo Phyton">
+                        </section>
+                        <section class="sobre-mim">
+                            <h4>Sobre mim</h4>
+                            <h2>Sou um estudante de programação procurando minha primeira oportunidade profissional</h2>
+                            <p>Fora do mundo profissional, gosto de frequentar a academia regularmente para cuidar da minha saúde e bem-estar. Além disso, gosto de passar o tempo com meus amigos jogando Call of Duty online, uma ótima forma de relaxar e socializar.</p>
+                            <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Uninter, buscando aprimorar ainda mais minhas habilidades técnicas e conhecimentos na área. Estou sempre em busca de me aprimorar, realizando cursos na Alura sobre desenvolvimento de sistemas e análise de dados. Para mim, o aprendizado contínuo é fundamental para acompanhar as rápidas mudanças no mundo da tecnologia e me manter sempre atualizado e preparado para os desafios futuros.    </p>
+                        </section>
+                        <section class="botao-curriculo">
+                            <img src="src/curriculo.svg" alt="logo currículo"><a href="src/Lucas Currículo.pdf" download>Meu currículo</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            Na div "projetos", estão os 3 principais projetos e um botão que leva para o meu github. Como ainda não tenho nenhum projeto, coloquei infomações genéricas.
+        -->
+        <div id="projetos" class="projetos">
+            <div class="titulo-projetos">
+                <h4>Projetos</h4>
+                <h2>Conheça meus melhores projetos</h2>
+            </div>
+            <div class="box-projetos">
+                <a href="" class="link-card">
+                    <div class="conteudo-card">
+                        <img src="src/projeto.png" alt="imagem-projeto">
+                        <h4>14 - Maio 2024</h4>
+                        <h3>Nome do Projeto</h3>
+                        <p>Descrição</p>
+                    </div>
+                </a>
+                <a href="" class="link-card">
+                    <div class="conteudo-card">
+                        <img src="src/projeto.png" alt="imagem-projeto">
+                        <h4>14 - Maio 2024</h4>
+                        <h3>Nome do Projeto</h3>
+                        <p>Descrição</p>
+                    </div>
+                </a>
+                <a href="" class="link-card">
+                    <div class="conteudo-card">
+                        <img src="src/projeto.png" alt="imagem-projeto">
+                        <h4>14 - Maio 2024</h4>
+                        <h3>Nome do Projeto</h3>
+                        <p>Descrição</p>
+                    </div>
+                </a>
+            </div>
+                <a href="https://github.com/lucasbbecker" class="ver-mais-projetos">
+                    <p>Ver mais</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20.7806 12.5306L14.0306 19.2806C13.8899 19.4213 13.699 19.5004 13.5 19.5004C13.301 19.5004 13.1101 19.4213 12.9694 19.2806C12.8286 19.1399 12.7496 18.949 12.7496 18.75C12.7496 18.551 12.8286 18.3601 12.9694 18.2194L18.4397 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H18.4397L12.9694 5.78061C12.8286 5.63988 12.7496 5.44901 12.7496 5.24999C12.7496 5.05097 12.8286 4.8601 12.9694 4.71936C13.1101 4.57863 13.301 4.49957 13.5 4.49957C13.699 4.49957 13.8899 4.57863 14.0306 4.71936L20.7806 11.4694C20.8504 11.539 20.9057 11.6217 20.9434 11.7128C20.9812 11.8038 21.0006 11.9014 21.0006 12C21.0006 12.0986 20.9812 12.1961 20.9434 12.2872C20.9057 12.3782 20.8504 12.461 20.7806 12.5306Z" fill="#F5F6F6"/>
+                    </svg>
+                </a>
+        </div>
+        <!--
+            Na div "contato", tem um texto com o meu e-mail e os links para meu meu linkedin e github e ao lado um formulário para entrar em contato. O formulário ainda não está funcionando.
+        -->
+        <div id="contato" class="contato">
+            <div class="info-formulario">
+                <div class="info-contato">
+                    <img src="src/lucas.png" alt="foto-lucas">
+                    <h4>Contato</h4>
+                    <h2>Gostou do meu trabalho? Me envie uma mensagem</h2>
+                    <p>Estou sempre disponível para conversar. Me envie um e-mail em <span>lucassbblima@gmail.com</span> ou entre em contato em qualquer rede social</p>
+                    <section>
+                        <a href="https://github.com/lucasbbecker" class="botao-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 1.5C6.20156 1.5 1.5 6.32344 1.5 12.2672C1.5 17.025 4.50937 21.0562 8.68125 22.4812C8.73977 22.494 8.79949 22.5002 8.85938 22.5C9.24844 22.5 9.39844 22.2141 9.39844 21.9656C9.39844 21.7078 9.38906 21.0328 9.38437 20.1328C9.03705 20.2142 8.68173 20.2567 8.325 20.2594C6.30469 20.2594 5.84531 18.6891 5.84531 18.6891C5.36719 17.4469 4.67813 17.1141 4.67813 17.1141C3.76406 16.4719 4.67344 16.4531 4.74375 16.4531H4.74844C5.80313 16.5469 6.35625 17.5687 6.35625 17.5687C6.88125 18.4875 7.58437 18.7453 8.2125 18.7453C8.62783 18.737 9.03673 18.6412 9.4125 18.4641C9.50625 17.7703 9.77812 17.2969 10.0781 17.025C7.74844 16.7531 5.29688 15.8297 5.29688 11.7047C5.29688 10.5281 5.70469 9.56719 6.375 8.81719C6.26719 8.54531 5.90625 7.44844 6.47812 5.96719C6.55483 5.94883 6.63368 5.94095 6.7125 5.94375C7.09219 5.94375 7.95 6.08906 9.36563 7.07344C11.0857 6.59218 12.9049 6.59218 14.625 7.07344C16.0406 6.08906 16.8984 5.94375 17.2781 5.94375C17.3569 5.94095 17.4358 5.94883 17.5125 5.96719C18.0844 7.44844 17.7234 8.54531 17.6156 8.81719C18.2859 9.57187 18.6937 10.5328 18.6937 11.7047C18.6937 15.8391 16.2375 16.7484 13.8984 17.0156C14.2734 17.3484 14.6109 18.0047 14.6109 19.0078C14.6109 20.4469 14.5969 21.6094 14.5969 21.9609C14.5969 22.2141 14.7422 22.5 15.1312 22.5C15.1942 22.5003 15.2571 22.494 15.3187 22.4812C19.4953 21.0562 22.5 17.0203 22.5 12.2672C22.5 6.32344 17.7984 1.5 12 1.5Z" fill="#F5F6F6"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/lucas-b-277324aa" class="botao-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.8205 1.5H3.29437C2.33672 1.5 1.5 2.18906 1.5 3.13547V20.7005C1.5 21.652 2.33672 22.5 3.29437 22.5H20.8153C21.7781 22.5 22.5 21.6464 22.5 20.7005V3.13547C22.5056 2.18906 21.7781 1.5 20.8205 1.5ZM8.00953 19.0045H5.00109V9.65063H8.00953V19.0045ZM6.60938 8.22844H6.58781C5.625 8.22844 5.00156 7.51172 5.00156 6.61453C5.00156 5.70094 5.64141 5.00109 6.62578 5.00109C7.61016 5.00109 8.2125 5.69578 8.23406 6.61453C8.23359 7.51172 7.61016 8.22844 6.60938 8.22844ZM19.0045 19.0045H15.9961V13.89C15.9961 12.6647 15.5583 11.8275 14.4698 11.8275C13.6383 11.8275 13.1461 12.39 12.9272 12.938C12.8452 13.1348 12.8231 13.403 12.8231 13.6767V19.0045H9.81469V9.65063H12.8231V10.9523C13.2609 10.3289 13.9448 9.43172 15.5363 9.43172C17.5111 9.43172 19.005 10.7334 19.005 13.5398L19.0045 19.0045Z" fill="#F5F6F6"/>
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+                <div class="formulario">
+                    <form>
+                        <input type="text" name="nome-completo" id="nome-completo" placeholder="Nome" />
+                        <input type="email" name="email" id="email" placeholder="E-mail" />
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+                        <button type="submit">
+                            <p>Enviar</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.7806 12.5306L14.0306 19.2806C13.8899 19.4213 13.699 19.5004 13.5 19.5004C13.301 19.5004 13.1101 19.4213 12.9694 19.2806C12.8286 19.1399 12.7496 18.949 12.7496 18.75C12.7496 18.551 12.8286 18.3601 12.9694 18.2194L18.4397 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H18.4397L12.9694 5.78061C12.8286 5.63988 12.7496 5.44901 12.7496 5.24999C12.7496 5.05097 12.8286 4.8601 12.9694 4.71936C13.1101 4.57863 13.301 4.49957 13.5 4.49957C13.699 4.49957 13.8899 4.57863 14.0306 4.71936L20.7806 11.4694C20.8504 11.539 20.9057 11.6217 20.9434 11.7128C20.9812 11.8038 21.0006 11.9014 21.0006 12C21.0006 12.0986 20.9812 12.1961 20.9434 12.2872C20.9057 12.3782 20.8504 12.461 20.7806 12.5306Z" fill="#F5F6F6"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--
+            No footer, coloquei o autor da página na margem esquerda e à direta, novamente os links para minhas redes sociais e um botão para voltar ao menu de navegação no topo da página.
+        -->
+        <footer class="links">
+            <span class="autor">Lucas Becker 2024,</span>
+            <ul>
+                <li><a href="https://github.com/lucasbbecker">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/lucas-b-277324aa">Linkedin</a></li>
+                <li><a href="#menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.2806 11.0306C19.211 11.1003 19.1282 11.1557 19.0372 11.1934C18.9461 11.2311 18.8486 11.2506 18.75 11.2506C18.6514 11.2506 18.5538 11.2311 18.4628 11.1934C18.3717 11.1557 18.289 11.1003 18.2194 11.0306L12.75 5.56029V20.25C12.75 20.4489 12.671 20.6397 12.5303 20.7803C12.3897 20.921 12.1989 21 12 21C11.8011 21 11.6103 20.921 11.4697 20.7803C11.329 20.6397 11.25 20.4489 11.25 20.25V5.56029L5.78061 11.0306C5.63988 11.1713 5.44901 11.2504 5.24999 11.2504C5.05097 11.2504 4.8601 11.1713 4.71936 11.0306C4.57863 10.8899 4.49957 10.699 4.49957 10.5C4.49957 10.301 4.57863 10.1101 4.71936 9.96935L11.4694 3.21935C11.539 3.14962 11.6217 3.0943 11.7128 3.05656C11.8038 3.01882 11.9014 2.99939 12 2.99939C12.0986 2.99939 12.1961 3.01882 12.2872 3.05656C12.3782 3.0943 12.461 3.14962 12.5306 3.21935L19.2806 9.96935C19.3503 10.039 19.4057 10.1217 19.4434 10.2128C19.4812 10.3038 19.5006 10.4014 19.5006 10.5C19.5006 10.5985 19.4812 10.6961 19.4434 10.7872C19.4057 10.8782 19.3503 10.961 19.2806 11.0306Z" fill="#F5F6F6"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
